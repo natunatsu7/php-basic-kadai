@@ -14,3 +14,9 @@
 
     //連数配列を出力する
     print_r($series_array);
+    ?>
+  </p>
+</body>
+
+</html>
+
