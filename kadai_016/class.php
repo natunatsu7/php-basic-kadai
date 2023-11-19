@@ -10,7 +10,7 @@
   <p>
     <?php
     class Food {
-      //プロパティ
+      // プロパティ
       private $name;
       private $price;
 
@@ -27,45 +27,46 @@
     }
 
     class Animal {
-      //プロパティ
+      // プロパティ
       private $name;
       private $height;
       private $weight;
 
+      // コンストラクタを定義する
       public function __construct(string $name, int $height, int $weight) {
         $this->name = $name;
         $this->height = $height;
         $this->weight = $weight;
       }
 
-      //メソッド
+      // メソッド
       public function show_height(int $height) {
         echo $this->height. '<br>';
       }
     }
 
-     //インスタンスFood
+     // インスタンスFood
      $food = new Food('potato',250);
 
-     //インスタンス$Foodの各プロパティの値を出力する print_r関数使用
+     // インスタンス$Foodの各プロパティの値を出力する print_r関数使用
      print_r($food);
      
-     //改行
+     // 改行
      echo '<br>';
 
-     //インスタンスAnimal
+     // インスタンスAnimal
      $animal = new Animal('dog', 60, 5000);
 
-     //インスタンス$Animalの各プロパティの値を出力する print_r関数使用
+     // インスタンス$Animalの各プロパティの値を出力する print_r関数使用
      print_r($animal);
 
-     //改行
+     // 改行
      echo '<br>';
 
-     //show_priceメソッド処理
+     // show_priceメソッド処理
      $food->show_price(250);
 
-     //show_heightメソッド処理
+     // show_heightメソッド処理
      $animal->show_height(60);
      
     ?>
